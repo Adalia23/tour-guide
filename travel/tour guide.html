@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a tour guide</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+        color: cornsilk;
+      }
+        #section2 {
+            background-color: cadetblue;
+            padding: 50px;
+        }
+        #section3 {
+            background-color: teal;
+            padding: 50px;
+            text-align: center;
+            font-size: 22px;
+        }
+        #section1 {
+          background-image: url(hero.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 550px;
+          padding: 50px;
+          text-align: center;
+        }
+        #section4 {
+          padding: 50px;
+          background-color: teal;
+          font-size: 25px;
+        }
+        .flip-card {
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+        }
+
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+
+        .flip-card-back {
+          background-color: #2980b9;
+          color: white;
+          transform: rotateY(180deg);
+        }
+        .flex-container > div {
+          background-color: #f1f1f1;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+        }
+
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        #nav {
+          font-size: 30px;
+          text-align: right;
+        }
+        a {
+          text-decoration: none;
+          color: teal;
+        }
+        button {
+          font-size: 20px;
+          background-color: teal;
+          width: 80px;
+          height: 50px;
+        }
+</style>
+</head>
+<body>
+  <div id="section1">
+      <p id="nav"> <a href="#home">Home</a> <a href="#contact" style="margin-left: 20px;">Contact</a> <a href="#about" style="margin-left: 20px;">About</a></p>
+    <fieldset style="margin-top: 3%; background-color: rgb(193, 204, 224); opacity: 60%;">
+      <h1 style="font-size: 70px; color: rgb(0, 70, 70);">Get A Tour Guide!</h1>
+      <h6 style="font-size: 25px; color: rgb(0, 70, 70);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis praesentium vitae labore tempore aut sequi voluptate ratione aspernatur placeat veritatis nemo, aliquam et enim voluptas fugiat vero possimus ducimus.</h6>
+    </fieldset>
+  </div>
+
+  <div id="section4" style="text-align: center;">
+    <h1>Here's Why You Should Have A Tour Guide When Travelling</h1>
+    <img src="tour guide.jpg" style="width: 425px; height: 250px; float: right; padding: 20px;">
+    <ul>
+      <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsam odio, illo earum veritatis est esse minus nesciunt sed a ab ut cumque in expedita ipsum laudantium? Maiores, minima necessitatibus.</li>
+      <br>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolorum quidem autem delectus. Provident voluptate dignissimos nesciunt optio molestiae nemo fugiat velit tempore! Voluptatum reprehenderit aliquid sint delectus fuga!</li>
+      <br>
+      <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, cupiditate illum ullam voluptas suscipit, eligendi omnis repudiandae laboriosam, doloribus similique reiciendis! Unde saepe amet at nam assumenda enim, iure nobis.</li>
+    </ul>
+  </div>
+
+    <div id="section2">
+        <h1 style="text-align: center; font-size: 50px; color: teal;">Recommended Destinations</h1>
+        <p style="text-align: center; font-size: 20px;">Hover over any box!</p>
+        <div class="flex-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="paris.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Paris</h1> 
+                <p>Capital of France</p> 
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="tblisi.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Tblisi</h1> 
+                <p>Capital of Georgia</p> 
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="london.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>London</h1> 
+                <p>Capital of England</p> 
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="Rome.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Rome</h1> 
+                <p>Capital of Italy</p> 
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="tokyo.jpg" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Tokyo</h1> 
+                <p>Capital of Japan</p> 
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+ 
+    <div id="section3">
+      <h1 style="text-align: center;">Want to get a tour guide?</h1>
+        <form action="result.html">
+            <label for="">Your email-id or contact no.</label>
+            <br>
+            <input type="email" name="email-id" id="email-id">
+            <br>
+            <br>
+            <label for="">Place you would like to visit?</label>
+            <br>
+            <input type="text" name="" id="">
+            <br>
+            <br>
+            <label for="">When would you like to travel?</label>
+            <br>
+            <input type="text">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
